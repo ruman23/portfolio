@@ -1,0 +1,75 @@
+.experience-section {
+  padding: 50px 20px;
+  background-color: #1e2a38; /* Dark blue background */
+  color: white;
+}
+
+/* Title styling: centered and bold */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff; /* White color for better contrast */
+  margin-bottom: 40px;
+}
+
+.experience-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.experience-companies {
+  width: 35%;
+  border-right: 2px solid rgba(255, 255, 255, 0.3);  /* Lighter divider for readability */
+  padding-right: 20px;
+}
+
+.experience-company {
+  margin-bottom: 20px;
+  cursor: pointer;
+  color: #bccedc; /* Light blue for text */
+  font-size: 18px;
+}
+
+.experience-company.active {
+  font-weight: bold;
+  color: #ffffff; /* Highlight active company in white for better contrast */
+}
+
+.experience-details {
+  width: 65%;
+}
+
+.experience-details h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* White color for better contrast */
+  margin-bottom: 10px;
+}
+
+.duration {
+  font-size: 16px;
+  color: #bccedc; /* Light blue color */
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+li::before {
+  content: '•';
+  color: #b0e6ff; /* Bullet point in light blue */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.5em;
+}
