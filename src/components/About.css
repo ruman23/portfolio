@@ -1,0 +1,18 @@
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers the content */
+  align-items: center;     /* Horizontally centers the content */
+  height: 100vh;
+  padding: 50px;
+  background-color: #e4e4e4;
+  text-align: center;       /* Centers the text inside the element */
+}
+
+#about h1 {
+  margin-top: 0;            /* Removes default margin on the h1 */
+}
+
+#about p {
+  margin-top: 20px;         /* Adds some space between the h1 and the paragraph */
+}

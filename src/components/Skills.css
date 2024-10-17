@@ -1,0 +1,27 @@
+#skills {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centers content vertically */
+  align-items: center;      /* Centers content horizontally */
+  text-align: center;       /* Centers text */
+}
+
+#skills h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;              /* Darker color for the heading */
+  margin-bottom: 30px;
+}
+
+#skills ul {
+  list-style-type: none;    /* Remove bullet points */
+  padding: 0;
+}
+
+#skills li {
+  font-size: 24px;
+  color: #555;              /* Medium gray color for list items */
+  margin-bottom: 10px;      /* Adds space between the list items */
+}

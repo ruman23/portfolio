@@ -1,0 +1,30 @@
+#portfolio {
+  height: 100vh;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Centers content vertically */
+  align-items: center;      /* Centers content horizontally */
+  text-align: center;       /* Centers the text inside the divs */
+}
+
+#portfolio h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;              /* Darker color for the heading */
+  margin-bottom: 30px;
+}
+
+#portfolio div {
+  margin-bottom: 20px;      /* Adds space between the project divs */
+}
+
+#portfolio h3 {
+  font-size: 24px;
+  color: #444;              /* Medium gray color for project titles */
+}
+
+#portfolio p {
+  font-size: 18px;
+  color: #666;              /* Lighter gray for the project descriptions */
+}

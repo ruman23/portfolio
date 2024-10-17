@@ -1,7 +1,12 @@
 .experience-section {
   padding: 50px 20px;
-  background-color: #1e2a38; /* Dark blue background */
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Centers content horizontally */
+  justify-content: center; /* Centers content vertically */
+  text-align: center;      /* Centers text inside the section */
+  min-height: 100vh;       /* Full viewport height */
 }
 
 /* Title styling: centered and bold */
@@ -17,6 +22,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   gap: 50px;
+  max-width: 1200px; /* Limits the width of the content */
+  width: 100%;       /* Ensures the content takes the full width */
+  margin-top: 20px;  /* Adds space between title and content */
 }
 
 .experience-companies {
@@ -39,6 +47,7 @@ h1 {
 
 .experience-details {
   width: 65%;
+  text-align: left; /* Aligns content to the left in details section */
 }
 
 .experience-details h2 {
