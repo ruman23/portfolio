@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Experience.css';
 
 const Experience = () => {
@@ -39,6 +39,23 @@ const Experience = () => {
       ]
     }
   ];
+
+  const handleScroll = (event) => {
+    if (event.deltaY > 0) {
+      // Scroll down
+      setSelectedCompany((prev) => (prev < experiences.length - 1 ? prev + 1 : prev));
+    } else {
+      // Scroll up
+      setSelectedCompany((prev) => (prev > 0 ? prev - 1 : prev));
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("wheel", handleScroll);
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
 
   return (
     <section id="experience" className="experience-section">
