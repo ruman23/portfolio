@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';  // Hamburger icon
 import { RxCross1 } from 'react-icons/rx';         // Cross icon
 import { RiProgress8Fill, RiProgress8Line } from 'react-icons/ri';  // Progress icons for visited and current
-import { TbProgress } from 'react-icons/tb';  // Default progress icon for unvisited
 import { GoCircle } from "react-icons/go";
 
 import './Header.css';  // Importing the styles
@@ -32,7 +31,10 @@ function Header() {
 
   const renderCircles = () => {
     return sectionIds.map((id, index) => {
-      const isCurrent = scrollPosition >= (index / sectionIds.length) * 100 && scrollPosition < ((index + 1) / sectionIds.length) * 100;
+      const isLastSection = index === sectionIds.length - 1;
+      const isCurrent = isLastSection
+        ? scrollPosition >= (index / sectionIds.length) * 100 // Stay active at the bottom
+        : scrollPosition >= (index / sectionIds.length) * 100 && scrollPosition < ((index + 1) / sectionIds.length) * 100;
       const isVisited = scrollPosition > ((index + 1) / sectionIds.length) * 100;
 
       let IconComponent = GoCircle; // Default icon (unvisited)
@@ -43,11 +45,11 @@ function Header() {
       }
 
       return (
-        <div key={id} className="nav-item">
+        <div key={id} className="nav-item" onClick={() => scrollToSection(id)}>
           <div className="progress-icon">
-            <IconComponent size={20} />  {/* Render the appropriate icon on the left */}
+            <IconComponent size={20} />  {/* Render the appropriate icon */}
           </div>
-          <li onClick={() => scrollToSection(id)}>
+          <li>
             {id.charAt(0).toUpperCase() + id.slice(1)}
           </li>
         </div>

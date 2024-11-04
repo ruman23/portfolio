@@ -1,12 +1,11 @@
 import React from 'react';
-import './Home.css'; 
-
+import './Home.css';
+import rumanSquare from '../assets/rumanSquare.png';
 
 function Home() {
   return (
-    <section id="home" style={{ height: '100vh', padding: '50px', backgroundColor: '#f4f4f4' }}>
-      <h1>Home Section</h1>
-      <p>Welcome to my portfolio!</p>
+    <section id="home" className="section-container">
+      <img src={rumanSquare} alt="Ruman" className="responsive-image" />
     </section>
   );
 }

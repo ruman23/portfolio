@@ -1,11 +1,17 @@
 #skills {
-  height: 100vh;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Centers content vertically */
   align-items: center;      /* Centers content horizontally */
   text-align: center;       /* Centers text */
+}
+
+/* Optional: Set a min-height on larger screens for consistent appearance */
+@media (min-width: 768px) {
+  #skills {
+    min-height: 70vh;      /* Ensures a minimum height on larger screens */
+  }
 }
 
 #skills h1 {

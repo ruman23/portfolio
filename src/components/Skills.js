@@ -3,7 +3,7 @@ import './Skills.css';
 
 function Skills() {
   return (
-    <section id="skills" style={{ height: '100vh', padding: '50px', backgroundColor: '#d4d4d4' }}>
+    <section id="skills" style={{padding: '50px'}}>
       <h1>My Skills</h1>
       <ul>
         <li>JavaScript</li>

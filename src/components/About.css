@@ -1,18 +1,23 @@
 #about {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically centers the content */
-  align-items: center;     /* Horizontally centers the content */
-  height: 100vh;
+  justify-content: center; /* Centers content vertically when needed */
+  align-items: center;     /* Centers content horizontally */
   padding: 50px;
-  background-color: #e4e4e4;
-  text-align: center;       /* Centers the text inside the element */
+  text-align: center;      /* Centers text inside the element */
+}
+
+/* Optional: For consistent appearance on larger screens */
+@media (min-width: 768px) {
+  #about {
+    min-height: 70vh;      /* Sets a minimum height on larger screens */
+  }
 }
 
 #about h1 {
-  margin-top: 0;            /* Removes default margin on the h1 */
+  margin-top: 0;           /* Removes default margin on the h1 */
 }
 
 #about p {
-  margin-top: 20px;         /* Adds some space between the h1 and the paragraph */
+  margin-top: 20px;        /* Adds space between the h1 and the paragraph */
 }

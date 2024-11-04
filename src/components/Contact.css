@@ -1,11 +1,17 @@
 #contact {
-  height: 100vh;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Centers content vertically */
   align-items: center;      /* Centers content horizontally */
   text-align: center;       /* Centers text */
+}
+
+/* Optional: Set a minimum height on larger screens for consistent appearance */
+@media (min-width: 768px) {
+  #contact {
+    min-height: 70vh;       /* Sets a minimum height for larger screens */
+  }
 }
 
 #contact h1 {

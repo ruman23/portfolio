@@ -3,7 +3,7 @@ import './Portfolio.css';
 
 function Portfolio() {
   return (
-    <section id="portfolio" style={{ height: '100vh', padding: '50px', backgroundColor: '#b4b4b4' }}>
+    <section id="portfolio" style={{padding: '50px'}}>
       <h1>My Projects</h1>
       <div>
         <h3>Project 1: Web App</h3>

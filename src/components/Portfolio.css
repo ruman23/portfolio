@@ -1,11 +1,17 @@
 #portfolio {
-  height: 100vh;
   padding: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;  /* Centers content vertically */
   align-items: center;      /* Centers content horizontally */
   text-align: center;       /* Centers the text inside the divs */
+}
+
+/* Optional: Set a minimum height on larger screens for consistent appearance */
+@media (min-width: 768px) {
+  #portfolio {
+    min-height: 70vh;       /* Sets a minimum height for larger screens */
+  }
 }
 
 #portfolio h1 {

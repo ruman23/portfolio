@@ -4,62 +4,59 @@
   display: flex;
   flex-direction: column;
   align-items: center;  /* Centers content horizontally */
-  justify-content: center; /* Centers content vertically */
   text-align: center;      /* Centers text inside the section */
-  min-height: 100vh;       /* Full viewport height */
 }
 
-/* Title styling: centered and bold */
 h1 {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  color: #ffffff; /* White color for better contrast */
+  color: #ffffff;
   margin-bottom: 40px;
 }
 
 .experience-content {
   display: flex;
-  justify-content: space-between;
-  gap: 50px;
-  max-width: 1200px; /* Limits the width of the content */
-  width: 100%;       /* Ensures the content takes the full width */
-  margin-top: 20px;  /* Adds space between title and content */
+  flex-direction: column; /* Stack vertically on smaller screens */
+  gap: 30px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 20px;
 }
 
 .experience-companies {
-  width: 35%;
-  border-right: 2px solid rgba(255, 255, 255, 0.3);  /* Lighter divider for readability */
-  padding-right: 20px;
+  width: 100%;
+  border-right: none; /* Remove border on smaller screens */
+  padding-right: 0;
 }
 
 .experience-company {
   margin-bottom: 20px;
   cursor: pointer;
-  color: #bccedc; /* Light blue for text */
+  color: #bccedc;
   font-size: 18px;
 }
 
 .experience-company.active {
   font-weight: bold;
-  color: #ffffff; /* Highlight active company in white for better contrast */
+  color: #ffffff;
 }
 
 .experience-details {
-  width: 65%;
-  text-align: left; /* Aligns content to the left in details section */
+  width: 100%;
+  text-align: left;
 }
 
 .experience-details h2 {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff; /* White color for better contrast */
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
 .duration {
   font-size: 16px;
-  color: #bccedc; /* Light blue color */
+  color: #bccedc;
   margin-bottom: 20px;
 }
 
@@ -76,9 +73,25 @@ li {
 
 li::before {
   content: '•';
-  color: #b0e6ff; /* Bullet point in light blue */
+  color: #b0e6ff;
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
+}
+
+@media (min-width: 768px) {
+  .experience-content {
+    flex-direction: row;
+  }
+
+  .experience-companies {
+    width: 35%;
+    border-right: 2px solid rgba(255, 255, 255, 0.3);
+    padding-right: 20px;
+  }
+
+  .experience-details {
+    width: 65%;
+  }
 }

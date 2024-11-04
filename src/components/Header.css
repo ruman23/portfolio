@@ -15,9 +15,9 @@
 
 /* Hamburger Icon - Hidden by default for PC view */
 .hamburger {
-  display: none;  /* Hidden by default */
+  display: none; /* Hidden by default */
   cursor: pointer;
-  z-index: 1001;  /* Ensures it stays above everything */
+  z-index: 1001; /* Ensures it stays above everything */
 }
 
 /* Navigation Menu */
@@ -31,7 +31,7 @@
 
 .nav-menu ul {
   display: flex;
-  list-style: none;
+  list-style: none; /* Ensures there are no bullet points */
   padding: 0;
   margin: 0;
 }
@@ -40,16 +40,16 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
   padding-left: 10px;
+  cursor: pointer; /* Ensures the entire nav item is clickable */
 }
 
 .nav-item li {
   margin-left: 10px;
-  cursor: pointer;
   font-weight: bold;
   color: white;
   transition: color 0.3s ease;
+  cursor: pointer; /* Pointer cursor for list item */
 }
 
 .nav-item li:hover {
@@ -60,6 +60,7 @@
 .progress-icon {
   margin-right: 10px;
   text-align: center;
+  cursor: pointer; /* Pointer cursor for icon */
 }
 
 .progress-icon svg {
@@ -109,11 +110,13 @@
     width: 100%;
     text-align: left;
     padding: 10px 20px;
+    cursor: pointer; /* Ensures the nav item is clickable in mobile view */
   }
-
+  
   /* Adjust the positioning of the icons */
   .progress-icon {
     margin-right: 10px;
     text-align: left;
+    cursor: pointer; /* Pointer cursor for icons on mobile view */
   }
 }
