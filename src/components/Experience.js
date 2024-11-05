@@ -1,12 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './Experience.css';
 
 const Experience = () => {
-  const [selectedCompany, setSelectedCompany] = useState(0);
-
   const experiences = [
     {
       company: "University of Nebraska Omaha (UNO)",
+      logo: require('../assets/uno_logo.png'),
       duration: "July 2023 - Present",
       description: `I joined the University of Nebraska Omaha as a Graduate Research Assistant in July 2023, 
       working in the field of Digital Twin, DL-based Networking Congestion Control, and Cyber Physical Systems.`,
@@ -18,6 +17,7 @@ const Experience = () => {
     },
     {
       company: "University of Nebraska Omaha (UNO)",
+      logo: require('../assets/uno_logo.png'),
       duration: "Aug 2022 - June 2023",
       description: `Worked as a Graduate Research Assistant focusing on Networking Security and Privacy, 
       Virtual Reality Privacy, and Machine Learning (ML) for IoT’s Congestion Control.`,
@@ -29,6 +29,7 @@ const Experience = () => {
     },
     {
       company: "Samsung R&D Institute Bangladesh",
+      logo: require('../assets/samsung_logo.png'),
       duration: "Dec 2018 – Jul. 2022",
       description: `Worked as a Software Engineer, specializing in cloud data processing, IoT device communication, 
       and optimizing onboarding systems for IoT devices.`,
@@ -40,51 +41,28 @@ const Experience = () => {
     }
   ];
 
-  const handleScroll = (event) => {
-    if (event.deltaY > 0) {
-      // Scroll down
-      setSelectedCompany((prev) => (prev < experiences.length - 1 ? prev + 1 : prev));
-    } else {
-      // Scroll up
-      setSelectedCompany((prev) => (prev > 0 ? prev - 1 : prev));
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("wheel", handleScroll);
-    return () => {
-      window.removeEventListener("wheel", handleScroll);
-    };
-  }, []);
-
   return (
     <section id="experience" className="experience-section">
       <div className="title-container">
-        <h1>Work Experience</h1> {/* Title at the top */}
+        <h1>Work Experience</h1>
       </div>
-      
+
       <div className="experience-content">
-        <div className="experience-companies">
-          {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className={`experience-company ${selectedCompany === index ? 'active' : ''}`}
-              onClick={() => setSelectedCompany(index)}
-            >
+        {experiences.map((exp, index) => (
+          <div key={index} className="experience-details">
+            <div className="company-header">
+              <img src={exp.logo} alt={`${exp.company} logo`} className="company-logo" />
               <h2>{exp.company}</h2>
             </div>
-          ))}
-        </div>
-        <div className="experience-details">
-          <h2>{experiences[selectedCompany].company}</h2>
-          <p className="duration">{experiences[selectedCompany].duration}</p>
-          <p>{experiences[selectedCompany].description}</p>
-          <ul>
-            {experiences[selectedCompany].tasks.map((task, index) => (
-              <li key={index}>{task}</li>
-            ))}
-          </ul>
-        </div>
+            <p className="duration">{exp.duration}</p>
+            <p>{exp.description}</p>
+            <ul>
+              {exp.tasks.map((task, idx) => (
+                <li key={idx}>{task}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </section>
   );
