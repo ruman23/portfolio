@@ -5,49 +5,55 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #e0e0e0; /* Light text color */
+  color: #e0e0e0;
 }
 
 #portfolio h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #ffffff; /* White text for main title */
+  color: #ffffff;
   margin-bottom: 30px;
 }
 
 #portfolio h2 {
   font-size: 30px;
-  color: #ffffff; /* White text for secondary titles */
+  color: #ffffff;
   margin-top: 40px;
   margin-bottom: 20px;
 }
 
-.publications {
+/* Consistent width for publications and awards */
+.publications,
+.awards {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
-  max-width: 800px;
+  max-width: 800px; /* Consistent width */
 }
 
-.publication {
-  background-color: #1e1e1e; /* Darker background for publication cards */
+.publication,
+.award-item {
+  background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
+  width: 100%; /* Full width within container */
   text-align: left;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
 }
 
 .publication p {
   font-size: 16px;
-  color: #b3b3b3; /* Light gray text */
+  color: #b3b3b3;
   margin: 5px 0;
 }
 
 .publication a {
   font-size: 16px;
-  color: #82b1ff; /* Lighter blue for links */
+  color: #82b1ff;
   text-decoration: none;
   margin-top: 10px;
   display: inline-block;
@@ -55,11 +61,53 @@
 
 .publication a:hover {
   text-decoration: underline;
-  color: #bbdefb; /* Slightly lighter blue on hover */
+  color: #bbdefb;
 }
 
 .note {
   margin-top: 10px;
-  color: #888; /* Gray text for notes */
+  color: #888;
   font-size: 15px;
+}
+
+/* Awards Section Styling */
+.award-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 5px;
+}
+
+.award-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.award-details {
+  flex-grow: 1;
+}
+
+.award-details h3 {
+  font-size: 18px;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.award-details p {
+  font-size: 15px;
+  color: #b3b3b3;
+  margin: 4px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication,
+  .award-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .award-logo {
+    margin-bottom: 10px;
+  }
 }

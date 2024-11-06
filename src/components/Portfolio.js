@@ -1,5 +1,7 @@
 import React from 'react';
 import './Portfolio.css';
+import unoLogo from '../assets/uno_logo.png';
+import samsungLogo from '../assets/samsung_logo.png';
 
 function Portfolio() {
   const publications = [
@@ -48,18 +50,33 @@ function Portfolio() {
   ];
 
 
+  const awards = [
+    {
+      logo: unoLogo,
+      title: "Graduate Research and Creative Activity (GRACA) Grant",
+      institution: "University of Nebraska Omaha",
+      year: "2024-2025",
+      description: "Received funding for research on “Setting Up autonomous vehicles.”"
+    },
+    {
+      logo: unoLogo,
+      title: "Graduate Research and Creative Activity (GRACA) Grant",
+      institution: "University of Nebraska Omaha",
+      year: "2023-2024",
+      description: "Received funding for research on “RTC Congestion Control.”"
+    },
+    {
+      logo: samsungLogo,
+      title: "SRBD Icon of the Month",
+      institution: "Samsung R&D Institute Bangladesh (SRBD)",
+      year: "March-April 2020",
+      description: "Recognized for exceptional contributions to the Samsung SmartThings project."
+    }
+  ];
 
   return (
     <section id="portfolio" style={{ padding: '30px' }}>
-      <h1>My Projects</h1>
-      <div>
-        <h3>Project 1: Web App</h3>
-        <p>Description of your first project.</p>
-      </div>
-      <div>
-        <h3>Project 2: Mobile App</h3>
-        <p>Description of your second project.</p>
-      </div>
+      <h1>My Portfolio</h1>
 
       <h2>Publications</h2>
       <div className="publications">
@@ -70,6 +87,20 @@ function Portfolio() {
               Access Paper
             </a>
             {pub.note && <p className="note"><strong>Note:</strong> {pub.note}</p>}
+          </div>
+        ))}
+      </div>
+
+      <h2>Awards and Recognitions</h2>
+      <div className="awards">
+        {awards.map((award, index) => (
+          <div key={index} className="award-item">
+            <img src={award.logo} alt={`${award.institution} logo`} className="award-logo" />
+            <div className="award-details">
+              <h3>{award.title}</h3>
+              <p><strong>{award.institution}</strong> — {award.year}</p>
+              <p>{award.description}</p>
+            </div>
           </div>
         ))}
       </div>
