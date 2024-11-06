@@ -1,11 +1,11 @@
 /* About Section Styling */
 #about {
   padding: 50px;
-  text-align: center;
+  color: #e0e0e0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #e0e0e0;
+  text-align: center;
 }
 
 /* Heading and Paragraph Styling */
@@ -40,54 +40,56 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%;
   max-width: 800px;
+  width: 100%;
 }
 
 .education-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-radius: 10px;
+  background-color: #1e1e1e; /* Dark background for contrast */
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: left; /* Left-align text content */
+  color: #e0e0e0;
 }
 
 .logo-title {
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 15px;
+  margin-bottom: 15px;
 }
 
 .education-logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 50%;
 }
 
 .education-details {
   display: flex;
   flex-direction: column;
+  gap: 4px; /* Small gap between details */
 }
 
 .education-details .degree {
   font-size: 1.1rem;
   font-weight: bold;
-  margin-bottom: 4px;
   color: #e0e0e0;
 }
 
 .education-details h3 {
   font-size: 1.2rem;
-  margin: 0;
   color: #ffffff;
+  margin: 0;
 }
 
 .education-details .location {
   font-size: 0.9rem;
-  color: #888888;
+  color: #bccedc; /* Softer color for location */
 }
 
 .education-details .dates {
@@ -102,13 +104,12 @@
   }
 
   .education-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 20px;
+    text-align: left;
   }
 
   .logo-title {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row; /* Keep logo and text aligned on smaller screens */
+    align-items: flex-start;
   }
 }
