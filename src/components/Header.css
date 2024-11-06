@@ -31,11 +31,12 @@
 
 .nav-menu ul {
   display: flex;
-  list-style: none; /* Ensures there are no bullet points */
+  list-style: none; /* Ensures there are no bullet points or dots */
   padding: 0;
   margin: 0;
 }
 
+/* Individual navigation items */
 .nav-item {
   display: flex;
   align-items: center;
@@ -50,6 +51,13 @@
   color: white;
   transition: color 0.3s ease;
   cursor: pointer; /* Pointer cursor for list item */
+  list-style-type: none; /* Ensures list item itself has no bullets */
+}
+
+/* Removes any unwanted dots or pseudo-elements */
+.nav-item li::before,
+.nav-item li::after {
+  content: none; /* Remove any before or after content */
 }
 
 .nav-item li:hover {
