@@ -1,36 +1,65 @@
 #portfolio {
-  padding: 50px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Centers content vertically */
-  align-items: center;      /* Centers content horizontally */
-  text-align: center;       /* Centers the text inside the divs */
-}
-
-/* Optional: Set a minimum height on larger screens for consistent appearance */
-@media (min-width: 768px) {
-  #portfolio {
-    min-height: 70vh;       /* Sets a minimum height for larger screens */
-  }
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #e0e0e0; /* Light text color */
 }
 
 #portfolio h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #333;              /* Darker color for the heading */
+  color: #ffffff; /* White text for main title */
   margin-bottom: 30px;
 }
 
-#portfolio div {
-  margin-bottom: 20px;      /* Adds space between the project divs */
+#portfolio h2 {
+  font-size: 30px;
+  color: #ffffff; /* White text for secondary titles */
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
-#portfolio h3 {
-  font-size: 24px;
-  color: #444;              /* Medium gray color for project titles */
+.publications {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 800px;
 }
 
-#portfolio p {
-  font-size: 18px;
-  color: #666;              /* Lighter gray for the project descriptions */
+.publication {
+  background-color: #1e1e1e; /* Darker background for publication cards */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5); /* Darker shadow */
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.publication p {
+  font-size: 16px;
+  color: #b3b3b3; /* Light gray text */
+  margin: 5px 0;
+}
+
+.publication a {
+  font-size: 16px;
+  color: #82b1ff; /* Lighter blue for links */
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+  color: #bbdefb; /* Slightly lighter blue on hover */
+}
+
+.note {
+  margin-top: 10px;
+  color: #888; /* Gray text for notes */
+  font-size: 15px;
 }

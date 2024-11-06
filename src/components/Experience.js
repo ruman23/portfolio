@@ -6,27 +6,17 @@ const Experience = () => {
     {
       company: "University of Nebraska Omaha (UNO)",
       logo: require('../assets/uno_logo.png'),
-      duration: "July 2023 - Present",
-      description: `I joined the University of Nebraska Omaha as a Graduate Research Assistant in July 2023, 
-      working in the field of Digital Twin, DL-based Networking Congestion Control, and Cyber Physical Systems.`,
+      duration: "Aug 2022 - Present",
+      description: `I have been working as a Graduate Research Assistant at the University of Nebraska Omaha since August 2022. My work spans Digital Twin, DL-based Networking Congestion Control, Cyber Physical Systems, Networking Security and Privacy, Virtual Reality Privacy, and Machine Learning (ML) for IoT's Congestion Control.`,
       tasks: [
         "Worked on Digital Twin-based systems.",
         "Developed DL-based networking congestion control solutions.",
-        "Involved in Cyber Physical System research."
-      ]
-    },
-    {
-      company: "University of Nebraska Omaha (UNO)",
-      logo: require('../assets/uno_logo.png'),
-      duration: "Aug 2022 - June 2023",
-      description: `Worked as a Graduate Research Assistant focusing on Networking Security and Privacy, 
-      Virtual Reality Privacy, and Machine Learning (ML) for IoT’s Congestion Control.`,
-      tasks: [
+        "Involved in Cyber Physical System research.",
         "Researched networking security and privacy.",
         "Worked on Virtual Reality Privacy projects.",
         "Developed ML models for IoT’s congestion control."
       ]
-    },
+    },    
     {
       company: "Samsung R&D Institute Bangladesh",
       logo: require('../assets/samsung_logo.png'),

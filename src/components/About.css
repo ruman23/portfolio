@@ -1,23 +1,114 @@
+/* About Section Styling */
 #about {
+  padding: 50px;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centers content vertically when needed */
-  align-items: center;     /* Centers content horizontally */
-  padding: 50px;
-  text-align: center;      /* Centers text inside the element */
+  align-items: center;
+  color: #e0e0e0;
 }
 
-/* Optional: For consistent appearance on larger screens */
-@media (min-width: 768px) {
-  #about {
-    min-height: 70vh;      /* Sets a minimum height on larger screens */
-  }
-}
-
+/* Heading and Paragraph Styling */
 #about h1 {
-  margin-top: 0;           /* Removes default margin on the h1 */
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff;
 }
 
 #about p {
-  margin-top: 20px;        /* Adds space between the h1 and the paragraph */
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.6;
+  color: #cccccc;
+}
+
+/* Research Interests Styling */
+.research-interests {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.research-interests li {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #e0e0e0;
+}
+
+/* Education Section Styling */
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.education-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: #1e1e1e;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.education-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.education-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-details .degree {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #e0e0e0;
+}
+
+.education-details h3 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.education-details .location {
+  font-size: 0.9rem;
+  color: #888888;
+}
+
+.education-details .dates {
+  font-size: 0.9rem;
+  color: #666666;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+  }
+
+  .education-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .logo-title {
+    flex-direction: column;
+    align-items: center;
+  }
 }
