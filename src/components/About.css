@@ -5,34 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-}
-
-/* Heading and Paragraph Styling */
-#about h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-#about p {
-  font-size: 1rem;
-  margin: 10px 0;
-  line-height: 1.6;
-  color: #cccccc;
-}
-
-/* Research Interests Styling */
-.research-interests {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0;
-}
-
-.research-interests li {
-  font-size: 18px;
-  margin: 8px 0;
-  color: #e0e0e0;
 }
 
 /* Education Section Styling */
@@ -45,71 +17,62 @@
 }
 
 .education-item {
-  background-color: #1e1e1e; /* Dark background for contrast */
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  text-align: left; /* Left-align text content */
-  color: #e0e0e0;
-}
-
-.logo-title {
   display: flex;
   align-items: center;
   gap: 15px;
-  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left; /* Ensure text aligns to the left */
 }
 
 .education-logo {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  border: 2px solid #ffffff;
-  padding: 5px;
-  border-radius: 50%;
+  border-radius: 4px;
 }
 
 .education-details {
   display: flex;
   flex-direction: column;
-  gap: 4px; /* Small gap between details */
-}
-
-.education-details .degree {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #e0e0e0;
+  gap: 4px;
+  align-items: flex-start; /* Aligns text to the left */
 }
 
 .education-details h3 {
-  font-size: 1.2rem;
-  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: bold;
   margin: 0;
+  color: #ffffff;
+  text-align: left; /* Explicitly left-align text */
 }
 
-.education-details .location {
-  font-size: 0.9rem;
-  color: #bccedc; /* Softer color for location */
+.education-details .degree {
+  font-size: 1rem;
+  color: #cccccc;
+  margin: 0;
+  text-align: left; /* Explicitly left-align text */
 }
 
 .education-details .dates {
   font-size: 0.9rem;
-  color: #666666;
+  color: #888888;
+  margin: 0;
+  text-align: left; /* Explicitly left-align text */
 }
 
-/* Responsive Styling */
+/* Responsive Adjustments for Mobile Screens */
 @media (max-width: 768px) {
-  .education-container {
-    flex-direction: column;
-  }
-
   .education-item {
-    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
     text-align: left;
   }
 
-  .logo-title {
-    flex-direction: row; /* Keep logo and text aligned on smaller screens */
-    align-items: flex-start;
+  .education-logo {
+    width: 50px;
+    height: 50px;
   }
 }
