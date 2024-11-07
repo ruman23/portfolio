@@ -1,11 +1,11 @@
+/* Portfolio Section Styling */
 #portfolio {
   padding: 30px;
+  color: #e0e0e0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   text-align: center;
-  color: #e0e0e0;
 }
 
 #portfolio h1 {
@@ -22,27 +22,24 @@
   margin-bottom: 20px;
 }
 
-/* Consistent width for publications and awards */
-.publications,
-.awards {
+/* Publications and Awards Containers */
+.publications, .awards {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 800px; /* Consistent width */
+  max-width: 800px;
 }
 
-.publication,
-.award-item {
+/* Individual Publication Styling */
+.publication {
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
-  width: 100%; /* Full width within container */
+  width: 100%;
   text-align: left;
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
 }
 
 .publication p {
@@ -56,7 +53,6 @@
   color: #82b1ff;
   text-decoration: none;
   margin-top: 10px;
-  display: inline-block;
 }
 
 .publication a:hover {
@@ -70,21 +66,31 @@
   font-size: 15px;
 }
 
-/* Awards Section Styling */
+/* Award Item Styling */
+.award-item {
+  display: flex;
+  align-items: center; /* Align logo and text vertically centered */
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
 .award-logo {
   width: 50px;
   height: 50px;
-  margin-right: 15px;
-  border-radius: 5px;
-}
-
-.award-item {
-  display: flex;
-  align-items: flex-start;
+  margin-right: 20px;
+  flex-shrink: 0;
 }
 
 .award-details {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Left-aligns the text */
+  text-align: left; /* Ensures text within is left-aligned */
 }
 
 .award-details h3 {
@@ -99,9 +105,10 @@
   margin: 4px 0;
 }
 
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .publication,
   .award-item {
     flex-direction: column;
     align-items: center;
