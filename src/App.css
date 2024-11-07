@@ -3,7 +3,12 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   scroll-behavior: smooth;
-  padding-top: 60px;  /* Prevent content from hiding behind the header */
+  padding-top: 60px; /* Prevent content from hiding behind the header */
+  margin: 0; /* Remove default margin to prevent overflow */
+}
+
+.App {
+  background-color: #121212;
 }
 
 /* Section styling (Add sections with unique background colors) */
@@ -38,5 +43,5 @@ section {
 }
 
 #contact {
-  background-color: #1a1a1a;
+  background-color: #121212;
 }

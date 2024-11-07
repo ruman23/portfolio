@@ -79,7 +79,7 @@ function Portfolio() {
   ];
 
   return (
-    <section id="portfolio" style={{ padding: '30px' }}>
+    <section id="portfolio">
       <h1>My Portfolio</h1>
 
       <h2>Publications</h2>
