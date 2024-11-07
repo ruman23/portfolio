@@ -63,7 +63,6 @@
   --font-family-heading: 'Helvetica Neue', sans-serif; /* Font family for headings */
 }
 
-
 /* Apply variables to elements */
 body {
   background-color: var(--bg-color);
