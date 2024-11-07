@@ -1,3 +1,10 @@
+/* Global Reset for All Unordered Lists */
+ul {
+  list-style: none; /* Ensures there are no bullet points or dots */
+  padding: 0;
+  margin: 0;
+}
+
 /* About Section Styling */
 #about {
   padding: 50px;
@@ -24,7 +31,7 @@
   background-color: #1e1e1e;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  text-align: left; /* Ensure text aligns to the left */
+  text-align: left;
 }
 
 .education-logo {
@@ -38,7 +45,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  align-items: flex-start; /* Aligns text to the left */
+  align-items: flex-start;
 }
 
 .education-details h3 {
@@ -46,21 +53,21 @@
   font-weight: bold;
   margin: 0;
   color: #ffffff;
-  text-align: left; /* Explicitly left-align text */
+  text-align: left;
 }
 
 .education-details .degree {
   font-size: 1rem;
   color: #cccccc;
   margin: 0;
-  text-align: left; /* Explicitly left-align text */
+  text-align: left;
 }
 
 .education-details .dates {
   font-size: 0.9rem;
   color: #888888;
   margin: 0;
-  text-align: left; /* Explicitly left-align text */
+  text-align: left;
 }
 
 /* Responsive Adjustments for Mobile Screens */
@@ -72,7 +79,65 @@
   }
 
   .education-logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
+}
+
+/* Social Icons Styling */
+.contact-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #cccccc;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  font-size: 3rem;
+  margin: 20px;
+  padding: 0;
+}
+
+/* Removes any unwanted dots or pseudo-elements in .social-icons */
+.social-icons li::before,
+.social-icons li::after {
+  content: none; /* Remove any before or after content */
+}
+
+.social-icons li a {
+  transition: color 0.3s;
+}
+
+.social-icons li a:hover {
+  color: #ffffff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .social-icons {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .social-icons li {
+    font-size: 1.5rem;
+  }
+
+/* About Section Styling */
+#about {
+  padding: 5px;
+}
 }

@@ -1,7 +1,11 @@
 import React from 'react';
 import './About.css';
 import unoLogo from '../assets/uno_logo.png';
+import cv from '../assets/cv.pdf';
 import sustLogo from '../assets/sust_logo.png';
+// Import Font Awesome icons
+import { FaLinkedin, FaGithub, FaGitlab, FaGoogleScholar } from 'react-icons/fa6';
+import { ImProfile } from "react-icons/im";
 
 function About() {
   return (
@@ -13,6 +17,18 @@ function About() {
       <p>
         My research interests lie in the realms of cybersecurity, cyber-physical systems, IoT, and machine learning. Driven by the challenge of bridging academia and industry, I continuously strive to advance solutions in these fields. I’ve been honored with the GRACA Grant at UNO and the SRBD Icon of the Month award from Samsung, recognizing my dedication and contributions.
       </p>
+
+      <h2>Contact</h2>
+      <div className="contact-info">
+        <p>Email: <a href="mailto:mail2ruman.i@gmail.com">mail2ruman.i@gmail.com</a></p>
+        <ul className="social-icons">
+          <li><a href="https://linkedin.com/in/ruman-i" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a></li>
+          <li><a href="https://github.com/ruman23" target="_blank" rel="noopener noreferrer"><FaGithub /></a></li>
+          <li><a href="https://gitlab.com/ruman23" target="_blank" rel="noopener noreferrer"><FaGitlab /></a></li>
+          <li><a href="https://scholar.google.com/citations?user=cJZu7JgAAAAJ&hl=en&authuser=1" target="_blank" rel="noopener noreferrer"><FaGoogleScholar /></a></li>
+          <li><a href={cv} target="_blank" rel="noopener noreferrer"><ImProfile /></a></li>
+        </ul>
+      </div>
 
       <h2>Research Interests</h2>
       <ul className="research-interests">
