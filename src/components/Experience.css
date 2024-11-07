@@ -1,12 +1,12 @@
 /* General Section Styling */
 .experience-section {
   padding: 50px 20px;
-  color: #e0e0e0; /* Light text for readability */
+  color: #e0e0e0;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  }
+}
 
 .title-container h1 {
   font-size: 36px;
@@ -26,16 +26,16 @@
 
 /* Experience Details Card */
 .experience-details {
-  background-color: #1e1e1e; /* Semi-transparent dark background */
+  background-color: #1e1e1e;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Darker shadow for better contrast */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   text-align: left;
   color: #e0e0e0;
 }
 
-/* Logo and Company Name Alignment */
-.company-header {
+/* Header Information (Position, Company, Duration, Logo) */
+.header-info {
   display: flex;
   align-items: center;
   gap: 15px;
@@ -43,57 +43,60 @@
 }
 
 .company-logo {
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
-  border: 2px solid #ffffff;
-  padding: 5px;
-  border-radius: 50%;
+  /* border: 2px solid #ffffff; */
+  /* padding: 5px; */
+  /* border-radius: 50%; */
 }
 
-.company-info h2 {
-  font-size: 24px;
+.position {
+  font-size: 1.1rem;
   font-weight: bold;
+  color: #82b1ff;
+}
+
+.company-name {
+  font-size: 1rem;
   color: #ffffff;
-  margin: 0;
 }
 
 .duration {
-  font-size: 16px;
-  color: #bccedc; /* Softer blue-gray text */
-  margin-bottom: 20px;
+  font-size: 0.9rem;
+  color: #bccedc;
 }
 
-/* Task List Styling */
-ul {
+/* Description and Task List Styling */
+.description {
+  margin: 20px 0;
+}
+
+.tasks {
   list-style-type: none;
   padding: 0;
 }
 
-li {
+.tasks li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
 
-li::before {
+.tasks li::before {
   content: '•';
-  color: #82b1ff; /* Lighter blue for list bullets */
+  color: #82b1ff;
   font-weight: bold;
   display: inline-block;
   width: 1em;
   margin-right: 0.5em;
 }
 
-/* Responsive Adjustments for Mobile Screens */
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .company-logo {
     width: 40px;
     height: 40px;
-  }
-
-  .company-info h2 {
-    font-size: 20px;
   }
 
   .title-container h1 {
