@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  background-color: #333;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   position: fixed;
   width: 100%;
   top: 0;
@@ -48,7 +48,7 @@
 .nav-item li {
   margin-left: 10px;
   font-weight: bold;
-  color: white;
+  color: var(--text-color);
   transition: color 0.3s ease;
   cursor: pointer; /* Pointer cursor for list item */
   list-style-type: none; /* Ensures list item itself has no bullets */
@@ -61,7 +61,7 @@
 }
 
 .nav-item li:hover {
-  color: #ddd;
+  color: var(--primary-color);
 }
 
 /* Style for the progress icons */
@@ -72,7 +72,7 @@
 }
 
 .progress-icon svg {
-  fill: white;
+  fill: var(--text-color);
 }
 
 /* Mobile View */
@@ -97,7 +97,7 @@
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: var(--bg-color);
   }
 
   .nav-menu.active {

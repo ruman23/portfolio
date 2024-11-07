@@ -8,10 +8,11 @@ ul {
 /* About Section Styling */
 #about {
   padding: 30px;
-  color: #e0e0e0;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--secondary-bg-color);
 }
 
 /* Education Section Styling */
@@ -28,9 +29,9 @@ ul {
   align-items: center;
   gap: 15px;
   padding: 15px;
-  background-color: #1e1e1e;
+  background-color: var(--secondary-bg-color);
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 10px var(--border-color);
   text-align: left;
 }
 
@@ -52,20 +53,20 @@ ul {
   font-size: 1.1rem;
   font-weight: bold;
   margin: 0;
-  color: #ffffff;
+  color: var(--text-color);
   text-align: left;
 }
 
 .education-details .degree {
   font-size: 1rem;
-  color: #cccccc;
+  color: var(--muted-text-color);
   margin: 0;
   text-align: left;
 }
 
 .education-details .dates {
   font-size: 0.9rem;
-  color: #888888;
+  color: var(--muted-text-color);
   margin: 0;
   text-align: left;
 }
@@ -78,7 +79,7 @@ ul {
 
 .contact-info p {
   font-size: 1rem;
-  color: #cccccc;
+  color: var(--muted-text-color);
 }
 
 .social-icons {
@@ -107,9 +108,8 @@ ul {
 }
 
 .social-icons li a:hover {
-  color: #ffffff;
+  color: var(--text-color);
 }
-
 
 /* Responsive Adjustments for Mobile Screens */
 @media (max-width: 768px) {
@@ -139,5 +139,4 @@ ul {
     padding: 3px;
     border-radius: 10px;
   }
-
 }

@@ -1,14 +1,30 @@
 /* Global Styles */
+:root {
+  --bg-color: #121212;                 /* Main background color */
+  --text-color: #e0e0e0;               /* Primary text color */
+  --primary-color: #82b1ff;            /* Accent color for links/buttons */
+  --secondary-bg-color: #1e1e1e;       /* Secondary background color */
+  --muted-text-color: #888888;         /* Less prominent text color */
+  --border-color: rgba(255, 255, 255, 0.1); /* For borders/dividers */
+}
+
+
+/* Apply variables to elements */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-  padding-top: 60px; /* Prevent content from hiding behind the header */
-  margin: 0; /* Remove default margin to prevent overflow */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--primary-color);
+}
+
+.section-container, .experience-section, .education-item, .publication, .award-item {
+  background-color: var(--secondary-bg-color);
 }
 
 .App {
-  background-color: #121212;
+  background-color: var(--bg-color)
 }
 
 /* Section styling (Add sections with unique background colors) */

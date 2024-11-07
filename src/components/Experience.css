@@ -1,18 +1,19 @@
 /* General Section Styling */
 .experience-section {
   padding: 30px;
-  color: #e0e0e0;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border-radius: 10px;
+  background-color: var(--secondary-bg-color);
 }
 
 .title-container h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--text-color);
   margin-bottom: 60px;
 }
 
@@ -27,12 +28,12 @@
 
 /* Experience Details Card */
 .experience-details {
-  background-color: #1e1e1e;
+  background-color: var(--secondary-bg-color);
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 10px var(--border-color);
   text-align: left;
-  color: #e0e0e0;
+  color: var(--text-color);
 }
 
 /* Header Information (Position, Company, Duration, Logo) */
@@ -47,25 +48,22 @@
   width: 50px;
   height: 50px;
   object-fit: contain;
-  /* border: 2px solid #ffffff; */
-  /* padding: 5px; */
-  /* border-radius: 50%; */
 }
 
 .position {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #82b1ff;
+  color: var(--primary-color);
 }
 
 .company-name {
   font-size: 1rem;
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .duration {
   font-size: 0.9rem;
-  color: #bccedc;
+  color: var(--muted-text-color);
 }
 
 /* Description and Task List Styling */
@@ -86,7 +84,7 @@
 
 .tasks li::before {
   content: '•';
-  color: #82b1ff;
+  color: var(--primary-color);
   font-weight: bold;
   display: inline-block;
   width: 1em;
@@ -104,14 +102,13 @@
     font-size: 28px;
   }
 
-    /* General Section Styling */
+  /* General Section Styling */
   .experience-section {
     padding: 3px;
-    color: #e0e0e0;
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
 }

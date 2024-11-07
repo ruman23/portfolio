@@ -1,24 +1,25 @@
 /* Portfolio Section Styling */
 #portfolio {
   padding: 30px;
-  color: #e0e0e0;
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   border-radius: 10px;
+  background-color: var(--secondary-bg-color);
 }
 
 #portfolio h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #ffffff;
+  color: var(--text-color);
   margin-bottom: 30px;
 }
 
 #portfolio h2 {
   font-size: 30px;
-  color: #ffffff;
+  color: var(--text-color);
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -34,10 +35,10 @@
 
 /* Individual Publication Styling */
 .publication {
-  background-color: #1e1e1e;
+  background-color: var(--secondary-bg-color);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 6px var(--border-color);
   margin-bottom: 20px;
   width: 100%;
   text-align: left;
@@ -45,34 +46,34 @@
 
 .publication p {
   font-size: 16px;
-  color: #b3b3b3;
+  color: var(--muted-text-color);
   margin: 5px 0;
 }
 
 .publication a {
   font-size: 16px;
-  color: #82b1ff;
+  color: var(--primary-color);
   text-decoration: none;
   margin-top: 10px;
 }
 
 .publication a:hover {
   text-decoration: underline;
-  color: #bbdefb;
+  color: var(--text-color);
 }
 
 .note {
   margin-top: 10px;
-  color: #888;
+  color: var(--muted-text-color);
   font-size: 15px;
 }
 
 /* Award Item Styling */
 .award-item {
-  background-color: #1e1e1e;
+  background-color: var(--secondary-bg-color);
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 6px var(--border-color);
   margin-bottom: 20px;
   width: 100%;
   max-width: 800px;
@@ -97,19 +98,19 @@
 
 .award-info h3 {
   font-size: 18px;
-  color: #e0e0e0;
+  color: var(--text-color);
   margin: 0;
 }
 
 .award-info p {
   font-size: 15px;
-  color: #b3b3b3;
+  color: var(--muted-text-color);
   margin: 4px 0;
 }
 
 .award-description {
   font-size: 15px;
-  color: #b3b3b3;
+  color: var(--muted-text-color);
   text-align: left;
 }
 
@@ -119,7 +120,6 @@
     flex-direction: column;
     align-items: center;
   }
-  
 
   #portfolio {
     padding: 3px;
