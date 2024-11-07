@@ -2,32 +2,53 @@
   padding: 50px;
   display: flex;
   flex-direction: column;
-  justify-content: center;  /* Centers content vertically */
-  align-items: center;      /* Centers content horizontally */
-  text-align: center;       /* Centers text */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-/* Optional: Set a min-height on larger screens for consistent appearance */
 @media (min-width: 768px) {
   #skills {
-    min-height: 70vh;      /* Ensures a minimum height on larger screens */
+    min-height: 70vh;
   }
 }
 
 #skills h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #333;              /* Darker color for the heading */
+  color: #333;
   margin-bottom: 30px;
 }
 
-#skills ul {
-  list-style-type: none;    /* Remove bullet points */
-  padding: 0;
+.skill-category h2 {
+  font-size: 28px;
+  color: #444;
+  margin: 20px 0 10px;
 }
 
-#skills li {
-  font-size: 24px;
-  color: #555;              /* Medium gray color for list items */
-  margin-bottom: 10px;      /* Adds space between the list items */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.skill-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #555;
+  font-size: 14px;
+  color: #f0f0f0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.skill-circle:hover {
+  transform: scale(1.2);
 }
