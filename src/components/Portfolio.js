@@ -56,21 +56,25 @@ function Portfolio() {
       title: "Graduate Research and Creative Activity (GRACA) Grant",
       institution: "University of Nebraska Omaha",
       year: "2024-2025",
-      description: "Received funding for research on “Setting Up autonomous vehicles.”"
+      description: "Awarded $5,000 to conduct research on Autonomous Vehicles."
     },
     {
       logo: unoLogo,
       title: "Graduate Research and Creative Activity (GRACA) Grant",
       institution: "University of Nebraska Omaha",
       year: "2023-2024",
-      description: "Received funding for research on “RTC Congestion Control.”"
+      description: "Awarded $5,000 to conduct research on Real-Time Communication Congestion Control."
     },
     {
       logo: samsungLogo,
       title: "SRBD Icon of the Month",
       institution: "Samsung R&D Institute Bangladesh (SRBD)",
       year: "March-April 2020",
-      description: "Recognized for exceptional contributions to the Samsung SmartThings project."
+      description: (
+        <>
+          Recognized for exceptional contributions to the <a href="https://www.samsung.com/us/smartthings/?srsltid=AfmBOoo_LJMAfh_jgnHrX9WwHiWjiG3U6df0CeXtH_rxP32LbZPPhjaC" target="_blank" rel="noopener noreferrer">Samsung SmartThings</a> project.
+        </>
+      )
     }
   ];
 
@@ -95,12 +99,14 @@ function Portfolio() {
       <div className="awards">
         {awards.map((award, index) => (
           <div key={index} className="award-item">
-            <img src={award.logo} alt={`${award.institution} logo`} className="award-logo" />
-            <div className="award-details">
-              <h3>{award.title}</h3>
-              <p><strong>{award.institution}</strong> — {award.year}</p>
-              <p>{award.description}</p>
+            <div className="award-header">
+              <img src={award.logo} alt={`${award.institution} logo`} className="award-logo" />
+              <div className="award-info">
+                <h3>{award.title} - {award.year}</h3>
+                <p><strong>{award.institution}</strong></p>
+              </div>
             </div>
+            <p className="award-description">{award.description}</p>
           </div>
         ))}
       </div>

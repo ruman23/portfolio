@@ -68,8 +68,6 @@
 
 /* Award Item Styling */
 .award-item {
-  display: flex;
-  align-items: center; /* Align logo and text vertically centered */
   background-color: #1e1e1e;
   padding: 20px;
   border-radius: 8px;
@@ -79,6 +77,12 @@
   max-width: 800px;
 }
 
+.award-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .award-logo {
   width: 50px;
   height: 50px;
@@ -86,30 +90,31 @@
   flex-shrink: 0;
 }
 
-.award-details {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Left-aligns the text */
-  text-align: left; /* Ensures text within is left-aligned */
+.award-info {
+  text-align: left;
 }
 
-.award-details h3 {
+.award-info h3 {
   font-size: 18px;
   color: #e0e0e0;
   margin: 0;
 }
 
-.award-details p {
+.award-info p {
   font-size: 15px;
   color: #b3b3b3;
   margin: 4px 0;
 }
 
-
+.award-description {
+  font-size: 15px;
+  color: #b3b3b3;
+  text-align: left;
+}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .award-item {
+  .award-header {
     flex-direction: column;
     align-items: center;
   }
