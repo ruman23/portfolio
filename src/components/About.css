@@ -7,19 +7,20 @@ ul {
 
 /* About Section Styling */
 #about {
-  padding: 30px;
+  padding: var(--spacing-large);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--secondary-bg-color);
+  border-radius: var(--border-radius-medium);
 }
 
 /* Education Section Styling */
 .education-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-medium);
   max-width: 800px;
   width: 100%;
 }
@@ -27,11 +28,11 @@ ul {
 .education-item {
   display: flex;
   align-items: center;
-  gap: 15px;
-  padding: 15px;
+  gap: var(--spacing-small);
+  padding: var(--spacing-small);
   background-color: var(--secondary-bg-color);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px var(--border-color);
+  border-radius: var(--border-radius-medium);
+  box-shadow: var(--shadow-medium);
   text-align: left;
 }
 
@@ -39,33 +40,27 @@ ul {
   width: 60px;
   height: 60px;
   object-fit: contain;
-  border-radius: 4px;
+  border-radius: var(--border-radius-small);
 }
 
 .education-details {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: var(--spacing-xs);
   align-items: flex-start;
 }
 
 .education-details h3 {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: var(--font-size-medium);
+  /* font-weight: bold; */
   margin: 0;
   color: var(--text-color);
   text-align: left;
 }
 
-.education-details .degree {
-  font-size: 1rem;
-  color: var(--muted-text-color);
-  margin: 0;
-  text-align: left;
-}
-
+.education-details .degree,
 .education-details .dates {
-  font-size: 0.9rem;
+  font-size: var(--font-size-small);
   color: var(--muted-text-color);
   margin: 0;
   text-align: left;
@@ -73,38 +68,28 @@ ul {
 
 /* Social Icons Styling */
 .contact-info {
-  margin-top: 20px;
+  margin-top: var(--spacing-medium);
   text-align: center;
 }
 
 .contact-info p {
-  font-size: 1rem;
+  font-size: var(--font-size-base);
   color: var(--muted-text-color);
 }
 
 .social-icons {
   display: flex;
-  gap: 15px;
-  margin-top: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  gap: var(--spacing-medium);
+  margin-top: var(--spacing-small);
 }
 
 .social-icons li {
-  font-size: 3rem;
-  margin: 20px;
-  padding: 0;
-}
-
-/* Removes any unwanted dots or pseudo-elements in .social-icons */
-.social-icons li::before,
-.social-icons li::after {
-  content: none; /* Remove any before or after content */
+  font-size: var(--font-size-xl);
+  margin: var(--spacing-medium);
 }
 
 .social-icons li a {
-  transition: color 0.3s;
+  transition: color var(--transition-fast);
 }
 
 .social-icons li a:hover {
@@ -127,16 +112,10 @@ ul {
   .social-icons {
     justify-content: center;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: var(--spacing-xs);
   }
 
   .social-icons li {
-    font-size: 1.5rem;
-  }
-
-  /* About Section Styling */
-  #about {
-    padding: 3px;
-    border-radius: 10px;
+    font-size: var(--font-size-large);
   }
 }

@@ -1,27 +1,27 @@
 /* Portfolio Section Styling */
 #portfolio {
-  padding: 30px;
+  padding: var(--spacing-large);
   color: var(--text-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 10px;
+  border-radius: var(--border-radius-medium);
   background-color: var(--secondary-bg-color);
 }
 
 #portfolio h1 {
-  font-size: 36px;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   color: var(--text-color);
-  margin-bottom: 30px;
+  margin-bottom: var(--spacing-large);
 }
 
 #portfolio h2 {
-  font-size: 30px;
+  font-size: var(--font-size-large);
   color: var(--text-color);
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-medium);
 }
 
 /* Publications and Awards Containers */
@@ -36,25 +36,25 @@
 /* Individual Publication Styling */
 .publication {
   background-color: var(--secondary-bg-color);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px var(--border-color);
-  margin-bottom: 20px;
+  padding: var(--spacing-medium);
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--shadow-light);
+  margin-bottom: var(--spacing-medium);
   width: 100%;
   text-align: left;
 }
 
 .publication p {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: var(--muted-text-color);
-  margin: 5px 0;
+  margin: var(--spacing-xs) 0;
 }
 
 .publication a {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: var(--primary-color);
   text-decoration: none;
-  margin-top: 10px;
+  margin-top: var(--spacing-small);
 }
 
 .publication a:hover {
@@ -63,18 +63,18 @@
 }
 
 .note {
-  margin-top: 10px;
+  margin-top: var(--spacing-small);
   color: var(--muted-text-color);
-  font-size: 15px;
+  font-size: var(--font-size-small);
 }
 
 /* Award Item Styling */
 .award-item {
   background-color: var(--secondary-bg-color);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px var(--border-color);
-  margin-bottom: 20px;
+  padding: var(--spacing-medium);
+  border-radius: var(--border-radius-small);
+  box-shadow: var(--shadow-light);
+  margin-bottom: var(--spacing-medium);
   width: 100%;
   max-width: 800px;
 }
@@ -82,13 +82,13 @@
 .award-header {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: var(--spacing-small);
 }
 
 .award-logo {
   width: 50px;
   height: 50px;
-  margin-right: 20px;
+  margin-right: var(--spacing-medium);
   flex-shrink: 0;
 }
 
@@ -97,20 +97,15 @@
 }
 
 .award-info h3 {
-  font-size: 18px;
+  font-size: var(--font-size-medium);
   color: var(--text-color);
   margin: 0;
 }
 
-.award-info p {
-  font-size: 15px;
+.award-info p, .award-description {
+  font-size: var(--font-size-small);
   color: var(--muted-text-color);
-  margin: 4px 0;
-}
-
-.award-description {
-  font-size: 15px;
-  color: var(--muted-text-color);
+  margin: var(--spacing-xs) 0;
   text-align: left;
 }
 
@@ -122,10 +117,10 @@
   }
 
   #portfolio {
-    padding: 3px;
+    padding: var(--spacing-small);
   }
 
   .award-logo {
-    margin-bottom: 10px;
+    margin-bottom: var(--spacing-small);
   }
 }

@@ -1,5 +1,5 @@
 #skills {
-  padding: 30px;
+  padding: var(--spacing-large);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,22 +16,22 @@
 }
 
 #skills h1 {
-  font-size: 36px;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   color: var(--text-color);
-  margin-bottom: 30px;
+  margin-bottom: var(--spacing-large);
 }
 
 .skill-category h2 {
-  font-size: 28px;
+  font-size: var(--font-size-large);
   color: var(--text-color);
-  margin: 20px 0 10px;
+  margin: var(--spacing-medium) 0 var(--spacing-small);
 }
 
 .skills-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: var(--spacing-medium);
   justify-content: center;
 }
 
@@ -43,12 +43,12 @@
   height: 100px;
   border-radius: 50%;
   background-color: var(--muted-text-color);
-  font-size: 14px;
+  font-size: var(--font-size-small);
   color: var(--text-color);
   text-align: center;
-  box-shadow: 0 4px 8px var(--border-color);
-  padding: 10px;
-  transition: transform 0.2s ease;
+  box-shadow: var(--shadow-medium);
+  padding: var(--spacing-small);
+  transition: transform var(--transition-fast) ease;
 }
 
 .skill-circle:hover {
@@ -58,12 +58,12 @@
 /* Responsive Adjustments for Mobile Screens */
 @media (max-width: 768px) {
   #skills {
-    padding: 3px;
+    padding: var(--spacing-small);
   }
 
   .skill-circle {
     width: 70px;
     height: 70px;
-    font-size: 12px;
+    font-size: var(--font-size-xs);
   }
 }

@@ -3,13 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
+  padding: var(--spacing-medium);
   background-color: var(--bg-color);
   color: var(--text-color);
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 1000;
+  z-index: var(--z-index-navbar);
   height: 60px;
 }
 
@@ -17,21 +17,20 @@
 .hamburger {
   display: none; /* Hidden by default */
   cursor: pointer;
-  z-index: 1001; /* Ensures it stays above everything */
+  z-index: var(--z-index-navbar + 1); /* Ensures it stays above everything */
 }
 
 /* Navigation Menu */
 .nav-menu {
   display: flex;
   justify-content: center;
-  width: 80%; /* Increased width of the navigation bar */
-  margin-left: auto;
-  margin-right: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .nav-menu ul {
   display: flex;
-  list-style: none; /* Ensures there are no bullet points or dots */
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -41,23 +40,17 @@
   display: flex;
   align-items: center;
   position: relative;
-  padding-left: 10px;
-  cursor: pointer; /* Ensures the entire nav item is clickable */
+  padding-left: var(--spacing-small);
+  cursor: pointer;
 }
 
 .nav-item li {
-  margin-left: 10px;
+  margin-left: var(--spacing-small);
   font-weight: bold;
   color: var(--text-color);
-  transition: color 0.3s ease;
-  cursor: pointer; /* Pointer cursor for list item */
-  list-style-type: none; /* Ensures list item itself has no bullets */
-}
-
-/* Removes any unwanted dots or pseudo-elements */
-.nav-item li::before,
-.nav-item li::after {
-  content: none; /* Remove any before or after content */
+  transition: color var(--transition-fast) ease;
+  cursor: pointer;
+  list-style-type: none;
 }
 
 .nav-item li:hover {
@@ -66,9 +59,9 @@
 
 /* Style for the progress icons */
 .progress-icon {
-  margin-right: 10px;
+  margin-right: var(--spacing-small);
   text-align: center;
-  cursor: pointer; /* Pointer cursor for icon */
+  cursor: pointer;
 }
 
 .progress-icon svg {
@@ -79,14 +72,14 @@
 @media (max-width: 768px) {
   /* Show hamburger and cross only on mobile */
   .hamburger {
-    display: flex; /* Display hamburger icon in mobile view */
+    display: flex;
   }
 
   .nav-container {
     flex-direction: row;
     justify-content: flex-start;
     height: 70px;
-    padding: 10px 20px;
+    padding: var(--spacing-small) var(--spacing-medium);
   }
 
   .nav-menu {
@@ -101,10 +94,10 @@
   }
 
   .nav-menu.active {
-    display: flex; /* Show menu when active */
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: var(--spacing-medium) 0;
   }
 
   .nav-menu ul {
@@ -117,14 +110,13 @@
   .nav-item {
     width: 100%;
     text-align: left;
-    padding: 10px 20px;
-    cursor: pointer; /* Ensures the nav item is clickable in mobile view */
+    padding: var(--spacing-small) var(--spacing-medium);
   }
-  
+
   /* Adjust the positioning of the icons */
   .progress-icon {
-    margin-right: 10px;
+    margin-right: var(--spacing-small);
     text-align: left;
-    cursor: pointer; /* Pointer cursor for icons on mobile view */
+    cursor: pointer;
   }
 }

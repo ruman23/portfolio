@@ -1,54 +1,54 @@
 #contact {
-  padding: 30px;
+  padding: var(--spacing-large);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 8px;
+  border-radius: var(--border-radius-medium);
   background-color: var(--secondary-bg-color);
   color: var(--text-color);
-  box-shadow: 0 4px 8px var(--border-color);
+  box-shadow: var(--shadow-medium);
 }
 
 #contact h1 {
-  font-size: 36px;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   color: var(--text-color);
-  margin-bottom: 20px;
+  margin-bottom: var(--spacing-medium);
 }
 
 #contact p {
-  font-size: 20px;
+  font-size: var(--font-size-medium);
   color: var(--muted-text-color);
-  margin: 10px 0;
+  margin: var(--spacing-small) 0;
 }
 
 .contact-details {
-  margin-top: 20px;
+  margin-top: var(--spacing-medium);
 }
 
 .contact-details p {
-  font-size: 18px;
+  font-size: var(--font-size-medium);
   color: var(--text-color);
   display: flex;
   align-items: center;
 }
 
 .contact-icon {
-  font-size: 24px;
+  font-size: var(--font-size-large);
   color: var(--primary-color);
-  margin-right: 8px;
+  margin-right: var(--spacing-xs);
 }
 
 /* Extra space after colon */
 .contact-details strong {
-  margin-right: 8px;
+  margin-right: var(--spacing-xs);
 }
 
 /* Style for email and LinkedIn text */
 .contact-info {
-  margin-left: 4px; /* Adds extra space between the colon and the email/link */
+  margin-left: var(--spacing-xs); /* Adds extra space between the colon and the email/link */
 }
 
 .click-to-copy {
@@ -57,11 +57,11 @@
 }
 
 .copy-confirmation {
-  font-size: 14px;
+  font-size: var(--font-size-small);
   color: var(--primary-color);
-  margin-top: 8px;
+  margin-top: var(--spacing-xs);
   font-style: italic;
-  animation: fadeInOut 2s ease;
+  animation: fadeInOut var(--transition-slow) ease;
 }
 
 @keyframes fadeInOut {
@@ -83,8 +83,8 @@
 
 /* Extra space above thank you message */
 .thank-you-message {
-  margin-top: 60px; /* Increased space above the message */
-  font-size: 18px;
+  margin-top: var(--spacing-xl); /* Increased space above the message */
+  font-size: var(--font-size-medium);
   color: var(--text-color);
   font-style: italic;
 }
@@ -92,6 +92,6 @@
 @media (min-width: 768px) {
   #contact {
     min-height: 70vh;
-    padding: 3px;
+    padding: var(--spacing-small);
   }
 }
