@@ -8,15 +8,10 @@ function Portfolio() {
     {
       citation: (
         <>
-          Islam, M. R., Anwar, R. H., Mastorakis, S., & Raza, M. T. (2024). <em>Characterizing Encrypted Application Traffic through Cellular Radio Interface Protocol.</em> arXiv preprint arXiv:2407.07361.
+          Islam, M. R., Anwar, R. H., Mastorakis, S., & Raza, M. T. (2024). <em>Characterizing Encrypted Application Traffic Through Cellular Radio Interface Protocol.</em> In <em>2024 IEEE 21st International Conference on Mobile Ad-Hoc and Smart Systems (MASS)</em> (pp. 321–329).
         </>
       ),
-      link: "https://arxiv.org/abs/2407.07361",
-      note: (
-        <>
-          This paper has been accepted for publication by the 21st IEEE International Conference on Mobile Ad-Hoc and Smart Systems (MASS 2024). See the <a href="https://sites.google.com/view/ieee-mass-2024/program/accepted-papers" target="_blank" rel="noopener noreferrer">accepted paper list</a>.
-        </>
-      )
+      link: "https://doi.org/10.1109/MASS62177.2024.00050"
     },
     {
       citation: (

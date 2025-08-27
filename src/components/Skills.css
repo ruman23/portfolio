@@ -42,7 +42,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: var(--muted-text-color);
+  background-color: var(--secondary-bg-color);
   font-size: var(--font-size-small);
   color: var(--text-color);
   text-align: center;

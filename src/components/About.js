@@ -53,7 +53,7 @@ function About() {
           <div className="education-details">
             <h3>University of Nebraska Omaha (UNO)</h3>
             <p className="degree">Master of Science (M.Sc.), Computing & Information Science</p>
-            <p className="dates">Aug. 2022 - Present</p>
+            <p className="dates">Aug. 2022 - Dec. 2024</p>
           </div>
         </div>
 
